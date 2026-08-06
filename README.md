@@ -20,31 +20,19 @@ These scripts rely on packages developed for this study:
 
 ## Scripts
 
-### Main blood cohort (RA B cells)
-
 | Script | Description |
 |--------|-------------|
-| `scrna_processing.R` | Load 10X data, QC, normalize, integrate, cluster, annotate B-cell types, trajectory |
-| `DE_analysis.R` | Pseudobulk DE (RUV + edgeR), pathway enrichment, volcano plots |
+| `scrna_processing.R` | scRNA-seq processing, clustering, and annotation |
+| `DE_analysis.R` | Pseudobulk differential expression and pathway enrichment |
 | `proportion_PCA.R` | Cell-type proportions and pseudobulk PCA |
-| `cell_scores.R` | Pathway / UCell scores and visualization |
-| `BCR_analysis.R` | BCR cloning, germline, SHM, merge with GEX, clonality, aNaive fate, trees |
-| `aNaive_analysis.R` | Focused aNaive subset analysis (composition, markers, PCA, DE, BCR fate) |
-
-### OA vs RA synovium
-
-| Script | Description |
-|--------|-------------|
-| `OA_RA_scrna_processing.R` | All-cell processing and B-cell subset |
-| `OA_RA_Bcells.R` | B-cell re-embedding, clustering, marker visualization |
-| `OA_RA_BCR.R` | Synovial BCR load → clean → clone → germline → SHM |
-
-### Naive-only cohort
-
-| Script | Description |
-|--------|-------------|
-| `naive_only_scrna.R` | All-cell + naive subset processing and cell-type annotation |
-| `naive_only_BCR.R` | Naive-cohort BCR processing, GEX merge, clonality plots |
+| `cell_scores.R` | Pathway / UCell scores |
+| `BCR_analysis.R` | BCR repertoire analysis and merge with gene expression |
+| `aNaive_analysis.R` | Activated naive B-cell focused analysis |
+| `OA_RA_scrna_processing.R` | OA/RA synovium scRNA-seq processing |
+| `OA_RA_Bcells.R` | OA/RA synovium B-cell analysis |
+| `OA_RA_BCR.R` | OA/RA synovium BCR analysis |
+| `naive_only_scrna.R` | Naive-only cohort scRNA-seq processing |
+| `naive_only_BCR.R` | Naive-only cohort BCR analysis |
 
 ## Usage
 
@@ -61,25 +49,4 @@ Or from the command line:
 Rscript scrna_processing.R
 ```
 
-Suggested run order for the main blood cohort:
-
-1. `scrna_processing.R`
-2. `DE_analysis.R` / `proportion_PCA.R` / `cell_scores.R` (independent after processing)
-3. `BCR_analysis.R`
-4. `aNaive_analysis.R`
-
-For BCR scripts, set the IMGT VDJ reference path (`vdj_reference` or `references`) before running.
-
-## Expected layout
-
-```
-project/
-├── data/                 # input 10X / BCR files (see script headers)
-├── object/               # intermediate SingleCellExperiment objects
-├── plot/                 # figures
-├── tables/               # markers, DE tables
-├── bcr_result/           # BCR intermediates and exports
-└── *.R                   # analysis scripts
-```
-
-Exact input paths are documented at the top of each script.
+For BCR scripts, set the IMGT VDJ reference path (`vdj_reference` or `references`) before running. Input paths and outputs are documented in each script header.
