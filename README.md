@@ -50,3 +50,10 @@ Rscript scrna_processing.R
 ```
 
 For BCR scripts, set the IMGT VDJ reference path (`vdj_reference` or `references`) before running. Input paths and outputs are documented in each script header.
+
+## License
+
+Copyright (C) 2026 Mengrui Zhang.
+
+These scripts are released under the [GNU General Public License v3.0](LICENSE) (GPL-3). You may use, modify, and distribute them, including for commercial purposes, if you keep the copyright notice and release distributed derivatives under GPL-3 as well. That requires credit and blocks closed-source redistribution of this code.
+
