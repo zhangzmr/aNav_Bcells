@@ -4,9 +4,11 @@ Analysis scripts for single-cell RNA-seq and BCR repertoire profiling of activat
 
 ## Manuscript
 
-**Senescent activated naive B cells promote anti-citrullinated antigen T cell responses and the transition to clinical rheumatoid arthritis**
+Wu, X., Zhang, M., Moon, J.S. *et al.* Senescent-like activated naive B cells contribute to progression to clinical rheumatoid arthritis. *Nat Aging* **6**, 2143–2163 (2026). https://doi.org/10.1038/s43587-026-01236-6
 
-Xiaohao Wu, Mengrui Zhang, Jae-Seung Moon, Eun Kyung Song, Joshua C Abrams, Laura S van Dam, Orr Sharpe, Marie Feser, Laurie Moss, Peggy P Ho, Melanie H Smith, Laura T Donlin, Jane H Buckner, Eddie A James, Gary S Firestein, Yuko Okamoto, Tobiaz V Lanz, Eric Meffre, V Michael Holers, Kevin D Deane, William H Robinson
+[Nature Aging article](https://www.nature.com/articles/s43587-026-01236-6)
+
+Xiaohao Wu, Mengrui Zhang, Jae-Seung Moon, Eun Kyung Song, Joshua C. Abrams, Laura S. van Dam, Orr Sharpe, Zhen Wang, Marie L. Feser, Laurakay Moss, Peggy P. Ho, Melanie H. Smith, Laura T. Donlin, Jane H. Buckner, Eddie A. James, Gary S. Firestein, Yuko Okamoto, Tobias V. Lanz, Eric Meffre, Aiping Lyu, V. Michael Holers, Kevin D. Deane & William H. Robinson
 
 ## Custom packages
 
